@@ -4,15 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SharedClass.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>iCallExt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>iLucky.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iLuckyExt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>773A1E761D9A5CD4003F04DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>773A1EA41DA89FF9003F04DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>775DBBD11D9922AD009B8997</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>775DBBEA1D9922C4009B8997</key>
 		<dict>
 			<key>primary</key>
 			<true/>

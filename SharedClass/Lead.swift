@@ -8,6 +8,9 @@
 
 import UIKit
 
-class Lead: NSObject {
+public class Lead: NSObject {
+    
+    var phone: String?
+    var label: String?
 
 }

@@ -7,14 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773A1E7A1D9A5CD4003F04DD /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A1E791D9A5CD4003F04DD /* CallDirectoryHandler.swift */; };
+		773A1E7E1D9A5CD4003F04DD /* iCallExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 773A1E771D9A5CD4003F04DD /* iCallExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		773A1EA91DA89FF9003F04DD /* SharedClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 773A1EA71DA89FF9003F04DD /* SharedClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		773A1EAC1DA89FF9003F04DD /* SharedClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773A1EA51DA89FF9003F04DD /* SharedClass.framework */; };
+		773A1EAD1DA89FF9003F04DD /* SharedClass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773A1EA51DA89FF9003F04DD /* SharedClass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		775DBBD61D9922AD009B8997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DBBD51D9922AD009B8997 /* AppDelegate.swift */; };
 		775DBBD81D9922AD009B8997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DBBD71D9922AD009B8997 /* ViewController.swift */; };
 		775DBBDB1D9922AD009B8997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775DBBD91D9922AD009B8997 /* Main.storyboard */; };
 		775DBBDD1D9922AD009B8997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775DBBDC1D9922AD009B8997 /* Assets.xcassets */; };
 		775DBBE01D9922AD009B8997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775DBBDE1D9922AD009B8997 /* LaunchScreen.storyboard */; };
+		775DBBEE1D9922C4009B8997 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775DBBED1D9922C4009B8997 /* NotificationCenter.framework */; };
+		775DBBF11D9922C4009B8997 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DBBF01D9922C4009B8997 /* TodayViewController.swift */; };
+		775DBBF41D9922C4009B8997 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775DBBF21D9922C4009B8997 /* MainInterface.storyboard */; };
+		775DBBF81D9922C4009B8997 /* iLuckyExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		776E32F71DAB694400AB4E8B /* Lead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E32F61DAB694400AB4E8B /* Lead.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		773A1E7C1D9A5CD4003F04DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DBBCA1D9922AD009B8997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 773A1E761D9A5CD4003F04DD;
+			remoteInfo = iCallExt;
+		};
+		773A1EAA1DA89FF9003F04DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DBBCA1D9922AD009B8997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 773A1EA41DA89FF9003F04DD;
+			remoteInfo = SharedClass;
+		};
+		775DBBF61D9922C4009B8997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DBBCA1D9922AD009B8997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775DBBEA1D9922C4009B8997;
+			remoteInfo = iLuckyExt;
+		};
+		776E32F41DAB692200AB4E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DBBCA1D9922AD009B8997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 773A1EA41DA89FF9003F04DD;
+			remoteInfo = SharedClass;
+		};
+		776E32F81DAB6AD900AB4E8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DBBCA1D9922AD009B8997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 773A1EA41DA89FF9003F04DD;
+			remoteInfo = SharedClass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		773A1EB11DA89FF9003F04DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				773A1EAD1DA89FF9003F04DD /* SharedClass.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775DBBFC1D9922C4009B8997 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				773A1E7E1D9A5CD4003F04DD /* iCallExt.appex in Embed App Extensions */,
+				775DBBF81D9922C4009B8997 /* iLuckyExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		773A1E771D9A5CD4003F04DD /* iCallExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iCallExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A1E791D9A5CD4003F04DD /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		773A1E7B1D9A5CD4003F04DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773A1E821D9A6890003F04DD /* iLucky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iLucky.entitlements; sourceTree = "<group>"; };
+		773A1E831D9B6357003F04DD /* iCallExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCallExt.entitlements; sourceTree = "<group>"; };
+		773A1EA51DA89FF9003F04DD /* SharedClass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedClass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A1EA71DA89FF9003F04DD /* SharedClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedClass.h; sourceTree = "<group>"; };
+		773A1EA81DA89FF9003F04DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775DBBD21D9922AD009B8997 /* iLucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		775DBBD51D9922AD009B8997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		775DBBD71D9922AD009B8997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,23 +104,76 @@
 		775DBBDC1D9922AD009B8997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		775DBBDF1D9922AD009B8997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		775DBBE11D9922AD009B8997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iLuckyExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		775DBBED1D9922C4009B8997 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		775DBBF01D9922C4009B8997 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		775DBBF31D9922C4009B8997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		775DBBF51D9922C4009B8997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776E32F61DAB694400AB4E8B /* Lead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lead.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		775DBBCF1D9922AD009B8997 /* Frameworks */ = {
+		773A1E741D9A5CD4003F04DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		773A1EA11DA89FF9003F04DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775DBBCF1D9922AD009B8997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A1EAC1DA89FF9003F04DD /* SharedClass.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775DBBE81D9922C4009B8997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775DBBEE1D9922C4009B8997 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		773A1E781D9A5CD4003F04DD /* iCallExt */ = {
+			isa = PBXGroup;
+			children = (
+				773A1E831D9B6357003F04DD /* iCallExt.entitlements */,
+				773A1E791D9A5CD4003F04DD /* CallDirectoryHandler.swift */,
+				773A1E7B1D9A5CD4003F04DD /* Info.plist */,
+			);
+			path = iCallExt;
+			sourceTree = "<group>";
+		};
+		773A1EA61DA89FF9003F04DD /* SharedClass */ = {
+			isa = PBXGroup;
+			children = (
+				773A1EA71DA89FF9003F04DD /* SharedClass.h */,
+				773A1EA81DA89FF9003F04DD /* Info.plist */,
+				776E32F61DAB694400AB4E8B /* Lead.swift */,
+			);
+			path = SharedClass;
+			sourceTree = "<group>";
+		};
 		775DBBC91D9922AD009B8997 = {
 			isa = PBXGroup;
 			children = (
 				775DBBD41D9922AD009B8997 /* iLucky */,
+				775DBBEF1D9922C4009B8997 /* iLuckyExt */,
+				773A1E781D9A5CD4003F04DD /* iCallExt */,
+				773A1EA61DA89FF9003F04DD /* SharedClass */,
+				775DBBEC1D9922C4009B8997 /* Frameworks */,
 				775DBBD31D9922AD009B8997 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				775DBBD21D9922AD009B8997 /* iLucky.app */,
+				775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */,
+				773A1E771D9A5CD4003F04DD /* iCallExt.appex */,
+				773A1EA51DA89FF9003F04DD /* SharedClass.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +192,7 @@
 		775DBBD41D9922AD009B8997 /* iLucky */ = {
 			isa = PBXGroup;
 			children = (
+				773A1E821D9A6890003F04DD /* iLucky.entitlements */,
 				775DBBD51D9922AD009B8997 /* AppDelegate.swift */,
 				775DBBD71D9922AD009B8997 /* ViewController.swift */,
 				775DBBD91D9922AD009B8997 /* Main.storyboard */,
@@ -64,9 +203,74 @@
 			path = iLucky;
 			sourceTree = "<group>";
 		};
+		775DBBEC1D9922C4009B8997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				775DBBED1D9922C4009B8997 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		775DBBEF1D9922C4009B8997 /* iLuckyExt */ = {
+			isa = PBXGroup;
+			children = (
+				775DBBF01D9922C4009B8997 /* TodayViewController.swift */,
+				775DBBF21D9922C4009B8997 /* MainInterface.storyboard */,
+				775DBBF51D9922C4009B8997 /* Info.plist */,
+			);
+			path = iLuckyExt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		773A1EA21DA89FF9003F04DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A1EA91DA89FF9003F04DD /* SharedClass.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		773A1E761D9A5CD4003F04DD /* iCallExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773A1E7F1D9A5CD4003F04DD /* Build configuration list for PBXNativeTarget "iCallExt" */;
+			buildPhases = (
+				773A1E731D9A5CD4003F04DD /* Sources */,
+				773A1E741D9A5CD4003F04DD /* Frameworks */,
+				773A1E751D9A5CD4003F04DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776E32F91DAB6AD900AB4E8B /* PBXTargetDependency */,
+			);
+			name = iCallExt;
+			productName = iCallExt;
+			productReference = 773A1E771D9A5CD4003F04DD /* iCallExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		773A1EA41DA89FF9003F04DD /* SharedClass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773A1EAE1DA89FF9003F04DD /* Build configuration list for PBXNativeTarget "SharedClass" */;
+			buildPhases = (
+				773A1EA01DA89FF9003F04DD /* Sources */,
+				773A1EA11DA89FF9003F04DD /* Frameworks */,
+				773A1EA21DA89FF9003F04DD /* Headers */,
+				773A1EA31DA89FF9003F04DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedClass;
+			productName = SharedClass;
+			productReference = 773A1EA51DA89FF9003F04DD /* SharedClass.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		775DBBD11D9922AD009B8997 /* iLucky */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 775DBBE41D9922AD009B8997 /* Build configuration list for PBXNativeTarget "iLucky" */;
@@ -74,15 +278,38 @@
 				775DBBCE1D9922AD009B8997 /* Sources */,
 				775DBBCF1D9922AD009B8997 /* Frameworks */,
 				775DBBD01D9922AD009B8997 /* Resources */,
+				775DBBFC1D9922C4009B8997 /* Embed App Extensions */,
+				773A1EB11DA89FF9003F04DD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				775DBBF71D9922C4009B8997 /* PBXTargetDependency */,
+				773A1E7D1D9A5CD4003F04DD /* PBXTargetDependency */,
+				773A1EAB1DA89FF9003F04DD /* PBXTargetDependency */,
 			);
 			name = iLucky;
 			productName = iLucky;
 			productReference = 775DBBD21D9922AD009B8997 /* iLucky.app */;
 			productType = "com.apple.product-type.application";
+		};
+		775DBBEA1D9922C4009B8997 /* iLuckyExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775DBBF91D9922C4009B8997 /* Build configuration list for PBXNativeTarget "iLuckyExt" */;
+			buildPhases = (
+				775DBBE71D9922C4009B8997 /* Sources */,
+				775DBBE81D9922C4009B8997 /* Frameworks */,
+				775DBBE91D9922C4009B8997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776E32F51DAB692200AB4E8B /* PBXTargetDependency */,
+			);
+			name = iLuckyExt;
+			productName = iLuckyExt;
+			productReference = 775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,7 +321,33 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = com.lee.lucky;
 				TargetAttributes = {
+					773A1E761D9A5CD4003F04DD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QH3Z86LQRZ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					773A1EA41DA89FF9003F04DD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QH3Z86LQRZ;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
 					775DBBD11D9922AD009B8997 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QH3Z86LQRZ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					775DBBEA1D9922C4009B8997 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QH3Z86LQRZ;
 						ProvisioningStyle = Automatic;
@@ -115,11 +368,28 @@
 			projectRoot = "";
 			targets = (
 				775DBBD11D9922AD009B8997 /* iLucky */,
+				775DBBEA1D9922C4009B8997 /* iLuckyExt */,
+				773A1E761D9A5CD4003F04DD /* iCallExt */,
+				773A1EA41DA89FF9003F04DD /* SharedClass */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		773A1E751D9A5CD4003F04DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773A1EA31DA89FF9003F04DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		775DBBD01D9922AD009B8997 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,9 +400,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		775DBBE91D9922C4009B8997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775DBBF41D9922C4009B8997 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		773A1E731D9A5CD4003F04DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773A1E7A1D9A5CD4003F04DD /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773A1EA01DA89FF9003F04DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776E32F71DAB694400AB4E8B /* Lead.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		775DBBCE1D9922AD009B8997 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,7 +436,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		775DBBE71D9922C4009B8997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775DBBF11D9922C4009B8997 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		773A1E7D1D9A5CD4003F04DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 773A1E761D9A5CD4003F04DD /* iCallExt */;
+			targetProxy = 773A1E7C1D9A5CD4003F04DD /* PBXContainerItemProxy */;
+		};
+		773A1EAB1DA89FF9003F04DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 773A1EA41DA89FF9003F04DD /* SharedClass */;
+			targetProxy = 773A1EAA1DA89FF9003F04DD /* PBXContainerItemProxy */;
+		};
+		775DBBF71D9922C4009B8997 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775DBBEA1D9922C4009B8997 /* iLuckyExt */;
+			targetProxy = 775DBBF61D9922C4009B8997 /* PBXContainerItemProxy */;
+		};
+		776E32F51DAB692200AB4E8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 773A1EA41DA89FF9003F04DD /* SharedClass */;
+			targetProxy = 776E32F41DAB692200AB4E8B /* PBXContainerItemProxy */;
+		};
+		776E32F91DAB6AD900AB4E8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 773A1EA41DA89FF9003F04DD /* SharedClass */;
+			targetProxy = 776E32F81DAB6AD900AB4E8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		775DBBD91D9922AD009B8997 /* Main.storyboard */ = {
@@ -161,9 +491,102 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		775DBBF21D9922C4009B8997 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				775DBBF31D9922C4009B8997 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		773A1E801D9A5CD4003F04DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = iCallExt/iCallExt.entitlements;
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				INFOPLIST_FILE = iCallExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iCallExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		773A1E811D9A5CD4003F04DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = iCallExt/iCallExt.entitlements;
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				INFOPLIST_FILE = iCallExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iCallExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		773A1EAF1DA89FF9003F04DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedClass/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.SharedClass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		773A1EB01DA89FF9003F04DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedClass/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.SharedClass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		775DBBE21D9922AD009B8997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -204,7 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -258,7 +681,10 @@
 		775DBBE51D9922AD009B8997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iLucky/iLucky.entitlements;
 				DEVELOPMENT_TEAM = QH3Z86LQRZ;
 				INFOPLIST_FILE = iLucky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,7 +697,10 @@
 		775DBBE61D9922AD009B8997 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iLucky/iLucky.entitlements;
 				DEVELOPMENT_TEAM = QH3Z86LQRZ;
 				INFOPLIST_FILE = iLucky/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -281,9 +710,55 @@
 			};
 			name = Release;
 		};
+		775DBBFA1D9922C4009B8997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				INFOPLIST_FILE = iLuckyExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iLuckyExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		775DBBFB1D9922C4009B8997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				INFOPLIST_FILE = iLuckyExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iLuckyExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		773A1E7F1D9A5CD4003F04DD /* Build configuration list for PBXNativeTarget "iCallExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773A1E801D9A5CD4003F04DD /* Debug */,
+				773A1E811D9A5CD4003F04DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773A1EAE1DA89FF9003F04DD /* Build configuration list for PBXNativeTarget "SharedClass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773A1EAF1DA89FF9003F04DD /* Debug */,
+				773A1EB01DA89FF9003F04DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		775DBBCD1D9922AD009B8997 /* Build configuration list for PBXProject "iLucky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -300,6 +775,16 @@
 				775DBBE61D9922AD009B8997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775DBBF91D9922C4009B8997 /* Build configuration list for PBXNativeTarget "iLuckyExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775DBBFA1D9922C4009B8997 /* Debug */,
+				775DBBFB1D9922C4009B8997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

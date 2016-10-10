@@ -8,6 +8,10 @@
 
 import Foundation
 import CallKit
+import SharedClass
+
+let kContainerUrlComponents = "numbers.plist"
+
 
 class CallDirectoryHandler: CXCallDirectoryProvider {
 
@@ -52,14 +56,40 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
         //
         // Numbers must be provided in numerically ascending order.
-        let phoneNumbers: [CXCallDirectoryPhoneNumber] = [ 18775555555, 18885555555 ]
-        let labels = [ "Telemarketer", "Local business" ]
-
-        for (phoneNumber, label) in zip(phoneNumbers, labels) {
-            context.addIdentificationEntry(withNextSequentialPhoneNumber: phoneNumber, label: label)
+//        let phoneNumbers: [CXCallDirectoryPhoneNumber] = [ +8618513542169, +8618610812492 ]
+//        let labels = [ "Telemarketerdddddddddddsfsdfsdsf,,dsfasfdsadsdsfsdfaadfasdfa", "哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈啊哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈" ]
+//
+//        readDatasFromSharedArea()
+//        for (phoneNumber, label) in zip(phoneNumbers, labels) {
+//            context.addIdentificationEntry(withNextSequentialPhoneNumber: phoneNumber, label: label)
+//        }
+        
+        
+        var lead: Lead?
+        var url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.lucky")
+        url = url?.appendingPathComponent(kContainerUrlComponents)
+        
+        let path = url?.path
+        
+        let object = NSKeyedUnarchiver.unarchiveObject(withFile: path!)
+        guard let safeArray = object as? Array<[String: String]> else {
+            return
+        }
+        for dic in safeArray {
+            
+            if let number = dic["phone"] {
+            
+                context.addIdentificationEntry(withNextSequentialPhoneNumber: CXCallDirectoryPhoneNumber(number)!, label: "hahahahahaha")
+                print("hahahahahahahahahhhahahahahahh")
+            }
         }
     }
 
+}
+
+func readDatasFromSharedArea() {
+    
+    
 }
 
 extension CallDirectoryHandler: CXCallDirectoryExtensionContextDelegate {

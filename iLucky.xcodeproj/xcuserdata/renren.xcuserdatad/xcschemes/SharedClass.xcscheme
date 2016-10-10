@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "775DBBD11D9922AD009B8997"
-               BuildableName = "iLucky.app"
-               BlueprintName = "iLucky"
+               BlueprintIdentifier = "773A1EA41DA89FF9003F04DD"
+               BuildableName = "SharedClass.framework"
+               BlueprintName = "SharedClass"
                ReferencedContainer = "container:iLucky.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "775DBBD11D9922AD009B8997"
-            BuildableName = "iLucky.app"
-            BlueprintName = "iLucky"
-            ReferencedContainer = "container:iLucky.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "775DBBD11D9922AD009B8997"
-            BuildableName = "iLucky.app"
-            BlueprintName = "iLucky"
+            BlueprintIdentifier = "773A1EA41DA89FF9003F04DD"
+            BuildableName = "SharedClass.framework"
+            BlueprintName = "SharedClass"
             ReferencedContainer = "container:iLucky.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "775DBBD11D9922AD009B8997"
-            BuildableName = "iLucky.app"
-            BlueprintName = "iLucky"
+            BlueprintIdentifier = "773A1EA41DA89FF9003F04DD"
+            BuildableName = "SharedClass.framework"
+            BlueprintName = "SharedClass"
             ReferencedContainer = "container:iLucky.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
