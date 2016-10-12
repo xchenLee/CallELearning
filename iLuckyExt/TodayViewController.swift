@@ -18,12 +18,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-    }
-    
-    func setupViews() {
-        self.preferredContentSize = CGSize(width: 0, height: 100)
-        self.resetBtn.backgroundColor = UIColor.red
+        if #available(iOSApplicationExtension 10.0, *) {
+            self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
+        }
     }
     
     func widgetMarginInsets(forProposedMarginInsets defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
@@ -35,7 +32,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     @IBAction func resizeBtnClicked(_ sender: AnyObject) {
-        self.preferredContentSize = CGSize(width: 0, height: self.preferredContentSize.height > 100 ? 100 : 150)
+        
+        
     }
     
     
@@ -49,4 +47,26 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
+    @available(iOSApplicationExtension 10.0, *)
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        
+        if activeDisplayMode == .expanded {
+            self.preferredContentSize = CGSize(width: 0, height: 200)
+        } else {
+            self.preferredContentSize = CGSize(width: 0, height: 100)
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
