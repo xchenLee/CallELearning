@@ -10,10 +10,12 @@ import UIKit
 import NotificationCenter
 
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDelegate, UITableViewDataSource {
     
-    var contentView: UIView!
-        
+    var array: [String] = []
+
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var resetBtn: UIButton!
     
     override func viewDidLoad() {
@@ -21,6 +23,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         if #available(iOSApplicationExtension 10.0, *) {
             self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
         }
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
     }
     
     func widgetMarginInsets(forProposedMarginInsets defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
@@ -51,11 +54,28 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
         
         if activeDisplayMode == .expanded {
-            self.preferredContentSize = CGSize(width: 0, height: 200)
+            self.preferredContentSize = CGSize(width: 0, height: 190)
         } else {
-            self.preferredContentSize = CGSize(width: 0, height: 100)
+            self.preferredContentSize = CGSize(width: 0, height: 90)
         }
     }
+    
+    
+    // MARK - UITableViewDelegate & UITableViewDataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.array.count > 3 ? 3 : self.array.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID")
+        return cell!;
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     
 }
 

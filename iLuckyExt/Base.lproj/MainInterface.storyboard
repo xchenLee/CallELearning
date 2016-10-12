@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3D-yA-0bv">
@@ -27,11 +26,18 @@
                                     <action selector="resizeBtnClicked:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="p4J-wY-bgv"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Pb-E8-9it">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="J3D-yA-0bv" secondAttribute="bottom" constant="10" id="V1B-2Z-qyV"/>
+                            <constraint firstItem="J3D-yA-0bv" firstAttribute="top" secondItem="0Pb-E8-9it" secondAttribute="bottom" constant="2" id="Yoi-F3-K4i"/>
+                            <constraint firstItem="0Pb-E8-9it" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="fgw-ul-bx0"/>
                             <constraint firstAttribute="trailing" secondItem="J3D-yA-0bv" secondAttribute="trailing" constant="10" id="fr7-MW-Neg"/>
                             <constraint firstItem="J3D-yA-0bv" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="fyI-GA-ycl"/>
+                            <constraint firstAttribute="trailing" secondItem="0Pb-E8-9it" secondAttribute="trailing" id="gDK-YA-Qiq"/>
+                            <constraint firstItem="0Pb-E8-9it" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="tNI-Xy-BrQ"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -39,9 +45,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="100"/>
+                    <size key="freeformSize" width="320" height="90"/>
                     <connections>
                         <outlet property="resetBtn" destination="J3D-yA-0bv" id="v5O-yn-eal"/>
+                        <outlet property="tableView" destination="0Pb-E8-9it" id="SPM-4e-bJV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
