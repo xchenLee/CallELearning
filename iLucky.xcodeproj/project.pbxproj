@@ -60,20 +60,6 @@
 			remoteGlobalIDString = 773A1EA41DA89FF9003F04DD;
 			remoteInfo = SharedClass;
 		};
-		778186D21DAF3E6400C7BAD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 778186CE1DAF3E6400C7BAD3 /* iLuckySubProject.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 779A3B7A1DAF35D800F3857A;
-			remoteInfo = iLuckySubProject;
-		};
-		778186DB1DAF47E400C7BAD3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 778186CE1DAF3E6400C7BAD3 /* iLuckySubProject.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 779A3B791DAF35D800F3857A;
-			remoteInfo = iLuckySubProject;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,7 +110,6 @@
 		775DBBF31D9922C4009B8997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		775DBBF51D9922C4009B8997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776E32F61DAB694400AB4E8B /* Lead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lead.swift; sourceTree = "<group>"; };
-		778186CE1DAF3E6400C7BAD3 /* iLuckySubProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iLuckySubProject.xcodeproj; path = iLuckySubProject/iLuckySubProject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +169,6 @@
 		775DBBC91D9922AD009B8997 = {
 			isa = PBXGroup;
 			children = (
-				778186CE1DAF3E6400C7BAD3 /* iLuckySubProject.xcodeproj */,
 				775DBBD41D9922AD009B8997 /* iLucky */,
 				775DBBEF1D9922C4009B8997 /* iLuckyExt */,
 				773A1E781D9A5CD4003F04DD /* iCallExt */,
@@ -235,14 +219,6 @@
 				775DBBF51D9922C4009B8997 /* Info.plist */,
 			);
 			path = iLuckyExt;
-			sourceTree = "<group>";
-		};
-		778186CF1DAF3E6400C7BAD3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				778186D31DAF3E6400C7BAD3 /* iLuckySubProject.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +284,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				778186DC1DAF47E400C7BAD3 /* PBXTargetDependency */,
 				775DBBF71D9922C4009B8997 /* PBXTargetDependency */,
 				773A1E7D1D9A5CD4003F04DD /* PBXTargetDependency */,
 				773A1EAB1DA89FF9003F04DD /* PBXTargetDependency */,
@@ -390,12 +365,6 @@
 			mainGroup = 775DBBC91D9922AD009B8997;
 			productRefGroup = 775DBBD31D9922AD009B8997 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 778186CF1DAF3E6400C7BAD3 /* Products */;
-					ProjectRef = 778186CE1DAF3E6400C7BAD3 /* iLuckySubProject.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				775DBBD11D9922AD009B8997 /* iLucky */,
@@ -405,16 +374,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		778186D31DAF3E6400C7BAD3 /* iLuckySubProject.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = iLuckySubProject.app;
-			remoteRef = 778186D21DAF3E6400C7BAD3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		773A1E751D9A5CD4003F04DD /* Resources */ = {
@@ -512,11 +471,6 @@
 			isa = PBXTargetDependency;
 			target = 773A1EA41DA89FF9003F04DD /* SharedClass */;
 			targetProxy = 776E32F81DAB6AD900AB4E8B /* PBXContainerItemProxy */;
-		};
-		778186DC1DAF47E400C7BAD3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = iLuckySubProject;
-			targetProxy = 778186DB1DAF47E400C7BAD3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
