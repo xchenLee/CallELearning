@@ -10,6 +10,7 @@ import UIKit
 import CallKit
 import NotificationCenter
 
+
 let kContainerUrlComponents = "numbers.plist"
 
 class ViewController: UIViewController {
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
         }
         
         NCWidgetController.widgetController().setHasContent(true, forWidgetWithBundleIdentifier: "lee.iLucky.iLuckyExt")
-        
+                
     }
 
     override func didReceiveMemoryWarning() {
