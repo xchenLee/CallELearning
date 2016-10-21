@@ -8,6 +8,7 @@
 
 import UIKit
 import CallKit
+import SharedClass
 import NotificationCenter
 
 
@@ -39,15 +40,21 @@ class ViewController: UIViewController {
         
         let path = safeUrl.path
         let phone:[String: String] = ["phone": "+8618610812492"]
-        let array = [phone]
+        
+        let lead: Lead = Lead(title:"+8618610812492", label: "aaaaaa")
+        let array: [Lead] = [lead]
         NSKeyedArchiver.archiveRootObject(array, toFile: path)
         
         let object = NSKeyedUnarchiver.unarchiveObject(withFile: path)
-        guard let safeArray = object as? Array<[String: String]> else {
+        guard let safeArray = object as? Array<Lead> else {
             return
         }
         
-        NCWidgetController.widgetController().setHasContent(true, forWidgetWithBundleIdentifier: "lee.iLucky.iLuckyExt")
+        let myLead: Lead = safeArray[0]
+        
+        let myPhone: String = myLead.phone
+        
+        //NCWidgetController.widgetController().setHasContent(true, forWidgetWithBundleIdentifier: "lee.iLucky.iLuckyExt")
                 
     }
 

@@ -65,7 +65,6 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
 //        }
         
         
-        var lead: Lead?
         var url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.lucky")
         url = url?.appendingPathComponent(kContainerUrlComponents)
         

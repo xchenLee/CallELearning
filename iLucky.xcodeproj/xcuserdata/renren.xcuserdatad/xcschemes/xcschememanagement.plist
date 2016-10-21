@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>iShareExt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>775DBBEA1D9922C4009B8997</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>778186E81DAF729200C7BAD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

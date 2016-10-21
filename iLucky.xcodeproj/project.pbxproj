@@ -11,7 +11,6 @@
 		773A1E7E1D9A5CD4003F04DD /* iCallExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 773A1E771D9A5CD4003F04DD /* iCallExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		773A1EA91DA89FF9003F04DD /* SharedClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 773A1EA71DA89FF9003F04DD /* SharedClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		773A1EAC1DA89FF9003F04DD /* SharedClass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773A1EA51DA89FF9003F04DD /* SharedClass.framework */; };
-		773A1EAD1DA89FF9003F04DD /* SharedClass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773A1EA51DA89FF9003F04DD /* SharedClass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		775DBBD61D9922AD009B8997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DBBD51D9922AD009B8997 /* AppDelegate.swift */; };
 		775DBBD81D9922AD009B8997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DBBD71D9922AD009B8997 /* ViewController.swift */; };
 		775DBBDB1D9922AD009B8997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775DBBD91D9922AD009B8997 /* Main.storyboard */; };
@@ -22,6 +21,9 @@
 		775DBBF41D9922C4009B8997 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775DBBF21D9922C4009B8997 /* MainInterface.storyboard */; };
 		775DBBF81D9922C4009B8997 /* iLuckyExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		776E32F71DAB694400AB4E8B /* Lead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E32F61DAB694400AB4E8B /* Lead.swift */; };
+		778186EC1DAF729200C7BAD3 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778186EB1DAF729200C7BAD3 /* ShareViewController.swift */; };
+		778186EF1DAF729200C7BAD3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778186ED1DAF729200C7BAD3 /* MainInterface.storyboard */; };
+		778186F31DAF729200C7BAD3 /* iShareExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 778186E91DAF729200C7BAD3 /* iShareExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,13 @@
 			remoteGlobalIDString = 773A1EA41DA89FF9003F04DD;
 			remoteInfo = SharedClass;
 		};
+		778186F11DAF729200C7BAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775DBBCA1D9922AD009B8997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 778186E81DAF729200C7BAD3;
+			remoteInfo = iShareExt;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,7 +78,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				773A1EAD1DA89FF9003F04DD /* SharedClass.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +90,7 @@
 			files = (
 				773A1E7E1D9A5CD4003F04DD /* iCallExt.appex in Embed App Extensions */,
 				775DBBF81D9922C4009B8997 /* iLuckyExt.appex in Embed App Extensions */,
+				778186F31DAF729200C7BAD3 /* iShareExt.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +119,10 @@
 		775DBBF31D9922C4009B8997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		775DBBF51D9922C4009B8997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776E32F61DAB694400AB4E8B /* Lead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lead.swift; sourceTree = "<group>"; };
+		778186E91DAF729200C7BAD3 /* iShareExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iShareExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		778186EB1DAF729200C7BAD3 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		778186EE1DAF729200C7BAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		778186F01DAF729200C7BAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +156,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		778186E61DAF729200C7BAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -173,6 +193,7 @@
 				775DBBEF1D9922C4009B8997 /* iLuckyExt */,
 				773A1E781D9A5CD4003F04DD /* iCallExt */,
 				773A1EA61DA89FF9003F04DD /* SharedClass */,
+				778186EA1DAF729200C7BAD3 /* iShareExt */,
 				775DBBEC1D9922C4009B8997 /* Frameworks */,
 				775DBBD31D9922AD009B8997 /* Products */,
 			);
@@ -185,6 +206,7 @@
 				775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */,
 				773A1E771D9A5CD4003F04DD /* iCallExt.appex */,
 				773A1EA51DA89FF9003F04DD /* SharedClass.framework */,
+				778186E91DAF729200C7BAD3 /* iShareExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,6 +241,16 @@
 				775DBBF51D9922C4009B8997 /* Info.plist */,
 			);
 			path = iLuckyExt;
+			sourceTree = "<group>";
+		};
+		778186EA1DAF729200C7BAD3 /* iShareExt */ = {
+			isa = PBXGroup;
+			children = (
+				778186EB1DAF729200C7BAD3 /* ShareViewController.swift */,
+				778186ED1DAF729200C7BAD3 /* MainInterface.storyboard */,
+				778186F01DAF729200C7BAD3 /* Info.plist */,
+			);
+			path = iShareExt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +319,7 @@
 				775DBBF71D9922C4009B8997 /* PBXTargetDependency */,
 				773A1E7D1D9A5CD4003F04DD /* PBXTargetDependency */,
 				773A1EAB1DA89FF9003F04DD /* PBXTargetDependency */,
+				778186F21DAF729200C7BAD3 /* PBXTargetDependency */,
 			);
 			name = iLucky;
 			productName = iLucky;
@@ -309,6 +342,23 @@
 			name = iLuckyExt;
 			productName = iLuckyExt;
 			productReference = 775DBBEB1D9922C4009B8997 /* iLuckyExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		778186E81DAF729200C7BAD3 /* iShareExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 778186F41DAF729200C7BAD3 /* Build configuration list for PBXNativeTarget "iShareExt" */;
+			buildPhases = (
+				778186E51DAF729200C7BAD3 /* Sources */,
+				778186E61DAF729200C7BAD3 /* Frameworks */,
+				778186E71DAF729200C7BAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iShareExt;
+			productName = iShareExt;
+			productReference = 778186E91DAF729200C7BAD3 /* iShareExt.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -352,6 +402,11 @@
 						DevelopmentTeam = QH3Z86LQRZ;
 						ProvisioningStyle = Automatic;
 					};
+					778186E81DAF729200C7BAD3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QH3Z86LQRZ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 775DBBCD1D9922AD009B8997 /* Build configuration list for PBXProject "iLucky" */;
@@ -370,6 +425,7 @@
 				775DBBD11D9922AD009B8997 /* iLucky */,
 				775DBBEA1D9922C4009B8997 /* iLuckyExt */,
 				773A1E761D9A5CD4003F04DD /* iCallExt */,
+				778186E81DAF729200C7BAD3 /* iShareExt */,
 				773A1EA41DA89FF9003F04DD /* SharedClass */,
 			);
 		};
@@ -405,6 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				775DBBF41D9922C4009B8997 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778186E71DAF729200C7BAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778186EF1DAF729200C7BAD3 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +508,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		778186E51DAF729200C7BAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				778186EC1DAF729200C7BAD3 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -472,6 +544,11 @@
 			target = 773A1EA41DA89FF9003F04DD /* SharedClass */;
 			targetProxy = 776E32F81DAB6AD900AB4E8B /* PBXContainerItemProxy */;
 		};
+		778186F21DAF729200C7BAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 778186E81DAF729200C7BAD3 /* iShareExt */;
+			targetProxy = 778186F11DAF729200C7BAD3 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -499,13 +576,21 @@
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
+		778186ED1DAF729200C7BAD3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				778186EE1DAF729200C7BAD3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		773A1E801D9A5CD4003F04DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = iCallExt/iCallExt.entitlements;
 				DEVELOPMENT_TEAM = QH3Z86LQRZ;
@@ -523,7 +608,7 @@
 		773A1E811D9A5CD4003F04DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = iCallExt/iCallExt.entitlements;
 				DEVELOPMENT_TEAM = QH3Z86LQRZ;
@@ -556,10 +641,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lee.SharedClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.0;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -583,9 +669,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lee.SharedClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.0;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -695,6 +782,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = iLucky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -702,6 +790,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.0;
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/iLuckySubProject/**";
 			};
@@ -720,6 +809,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = iLucky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -727,6 +817,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.0;
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/iLuckySubProject/**";
 			};
@@ -754,6 +845,34 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iLuckyExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		778186F51DAF729200C7BAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				INFOPLIST_FILE = iShareExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iShareExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		778186F61DAF729200C7BAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QH3Z86LQRZ;
+				INFOPLIST_FILE = iShareExt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lee.iLucky.iShareExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -804,6 +923,15 @@
 			buildConfigurations = (
 				775DBBFA1D9922C4009B8997 /* Debug */,
 				775DBBFB1D9922C4009B8997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		778186F41DAF729200C7BAD3 /* Build configuration list for PBXNativeTarget "iShareExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				778186F51DAF729200C7BAD3 /* Debug */,
+				778186F61DAF729200C7BAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

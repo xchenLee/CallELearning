@@ -36,9 +36,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
     
     @IBAction func resizeBtnClicked(_ sender: AnyObject) {
         
-        
     }
-    
     
     @nonobjc func widgetPerformUpdate(completionHandler: ((NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
